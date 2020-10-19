@@ -24,10 +24,11 @@ namespace FizzBuzz.tests
             //Then
             Assert.AreEqual(fizzBuzzString,"1 fizz buzz 2 0 4 fizzbuzz buzz");
         }
+
         [Description("When I use array of numbers that not multiple of 3 or 5,"+ 
                     "I get the same number as string ")]
         [TestMethod]
-        public void generateFizzBuzzStringTestForOneNumber()
+        public void generateFizzBuzzStringTestForOneNumberEqualToONE()
         {
             //Given
             int [] arrayOfNumbers = new int [] {1};
@@ -35,6 +36,16 @@ namespace FizzBuzz.tests
             var fizzBuzzString = _fizzBuzz.generateFizzBuzzString(arrayOfNumbers);
             //Then
             Assert.AreEqual(fizzBuzzString,"1");
+        }
+        [TestMethod]
+        public void generateFizzBuzzStringTestForOneNumberEqualToFour()
+        {
+            //Given
+            int [] arrayOfNumbers = new int [] {4};
+            //When
+            var fizzBuzzString = _fizzBuzz.generateFizzBuzzString(arrayOfNumbers);
+            //Then
+            Assert.AreEqual(fizzBuzzString,"4");
         }
     }
 }

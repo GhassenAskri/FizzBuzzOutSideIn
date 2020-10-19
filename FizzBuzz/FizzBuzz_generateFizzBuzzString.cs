@@ -6,7 +6,7 @@ namespace FizzBuzz
     {
         public string generateFizzBuzzString (int [] arrayOfNumbers)
         {
-            return "1";
+            return Convert.ToString(arrayOfNumbers[0]);
             throw new NotImplementedException ("You have to write a test first");
         }
     }
