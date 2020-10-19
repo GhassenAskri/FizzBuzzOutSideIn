@@ -23,5 +23,18 @@ namespace FizzBuzz.tests
             //Then
             Assert.AreEqual(fizzBuzzString,"1 fizz buzz 2 0 4 fizzbuzz buzz");
         }
+        
+        [TestMethod]
+        [Description("When I use array of numbers equal to [1],"+ 
+                    "I get a fizzbuzz string equal to 1 ")]
+        public void generateFizzBuzzStringTestForOneNumber()
+        {
+            //Given
+            int [] arrayOfNumbers = new int [] {1};
+            //When
+            var fizzBuzzString = _fizzBuzz.generateFizzBuzzString(arrayOfNumbers);
+            //Then
+            Assert.AreEqual(fizzBuzzString,"1");
+        }
     }
 }
