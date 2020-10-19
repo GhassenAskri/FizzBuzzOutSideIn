@@ -11,9 +11,10 @@ namespace FizzBuzz.tests
         {
             _fizzBuzz = new FizzBuzz_generateFizzBuzzString();
         }
-        [TestMethod]
+
         [Description("When I use array of numbers equal to [1,9,10,2,0,4,15,10],"+ 
                     "I get a fizzbuzz string equal to 1 fizz buzz 2 0 4 fizzbuzz buzz")]
+        [TestMethod]
         public void generateFizzBuzzStringTest()
         {
             //Given
@@ -23,10 +24,9 @@ namespace FizzBuzz.tests
             //Then
             Assert.AreEqual(fizzBuzzString,"1 fizz buzz 2 0 4 fizzbuzz buzz");
         }
-        
-        [TestMethod]
         [Description("When I use array of numbers that not multiple of 3 or 5,"+ 
                     "I get the same number as string ")]
+        [TestMethod]
         public void generateFizzBuzzStringTestForOneNumber()
         {
             //Given
