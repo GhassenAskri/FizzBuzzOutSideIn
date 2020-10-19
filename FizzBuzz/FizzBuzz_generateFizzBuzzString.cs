@@ -7,14 +7,14 @@ namespace FizzBuzz
         public string generateFizzBuzzString (int [] arrayOfNumbers)
         {
             var fizzBuzzString ="";
-            var FIRST_NUMBER = arrayOfNumbers[0];
+            var firstNumber = arrayOfNumbers[0];
 
 
-            if(isFizz(FIRST_NUMBER)){
+            if(isFizz(firstNumber)){
                  fizzBuzzString ="fizz";
             }
             else{
-                fizzBuzzString = convertToString(FIRST_NUMBER);
+                fizzBuzzString = Convert.ToString(firstNumber);
             }
              
             return fizzBuzzString;
@@ -22,10 +22,7 @@ namespace FizzBuzz
             throw new NotImplementedException ("You have to write a test first");
         }
 
-        public static string convertToString (int number)
-        {
-            return Convert.ToString(number);
-        }
+       
         public static bool isFizz(int number)
         {
             if (number % 3 == 0)
