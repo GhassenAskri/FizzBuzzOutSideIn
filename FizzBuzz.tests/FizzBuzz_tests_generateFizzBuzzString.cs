@@ -12,6 +12,8 @@ namespace FizzBuzz.tests
             _fizzBuzz = new FizzBuzz_generateFizzBuzzString();
         }
         [TestMethod]
+        [Description("When I use array of numbers equal to [1,9,10,2,0,4,15,10],"+ 
+                    "I get a fizzbuzz string equal to 1 fizz buzz 2 0 4 fizzbuzz buzz")]
         public void generateFizzBuzzStringTest()
         {
             //Given
