@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz", "FizzBuzz\FizzBuzz.csproj", "{46729122-E5F1-4C65-9D32-7267F78E58D3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz.tests", "FizzBuzz.tests\FizzBuzz.tests.csproj", "{BD3A4A0E-78D0-40A2-AC9F-B7F67A75AF33}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,17 @@ Global
 		{46729122-E5F1-4C65-9D32-7267F78E58D3}.Release|x64.Build.0 = Release|Any CPU
 		{46729122-E5F1-4C65-9D32-7267F78E58D3}.Release|x86.ActiveCfg = Release|Any CPU
 		{46729122-E5F1-4C65-9D32-7267F78E58D3}.Release|x86.Build.0 = Release|Any CPU
+		{BD3A4A0E-78D0-40A2-AC9F-B7F67A75AF33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD3A4A0E-78D0-40A2-AC9F-B7F67A75AF33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD3A4A0E-78D0-40A2-AC9F-B7F67A75AF33}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{BD3A4A0E-78D0-40A2-AC9F-B7F67A75AF33}.Debug|x64.Build.0 = Debug|Any CPU
+		{BD3A4A0E-78D0-40A2-AC9F-B7F67A75AF33}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BD3A4A0E-78D0-40A2-AC9F-B7F67A75AF33}.Debug|x86.Build.0 = Debug|Any CPU
+		{BD3A4A0E-78D0-40A2-AC9F-B7F67A75AF33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD3A4A0E-78D0-40A2-AC9F-B7F67A75AF33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD3A4A0E-78D0-40A2-AC9F-B7F67A75AF33}.Release|x64.ActiveCfg = Release|Any CPU
+		{BD3A4A0E-78D0-40A2-AC9F-B7F67A75AF33}.Release|x64.Build.0 = Release|Any CPU
+		{BD3A4A0E-78D0-40A2-AC9F-B7F67A75AF33}.Release|x86.ActiveCfg = Release|Any CPU
+		{BD3A4A0E-78D0-40A2-AC9F-B7F67A75AF33}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
