@@ -25,8 +25,8 @@ namespace FizzBuzz.tests
         }
         
         [TestMethod]
-        [Description("When I use array of numbers equal to [1],"+ 
-                    "I get a fizzbuzz string equal to 1 ")]
+        [Description("When I use array of numbers that not multiple of 3 or 5,"+ 
+                    "I get the same number as string ")]
         public void generateFizzBuzzStringTestForOneNumber()
         {
             //Given
