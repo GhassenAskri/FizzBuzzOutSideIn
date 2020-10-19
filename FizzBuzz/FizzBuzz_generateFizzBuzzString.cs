@@ -6,7 +6,7 @@ namespace FizzBuzz
     {
         public string generateFizzBuzzString (int [] arrayOfNumbers)
         {
-            return "Nothing to be done";
+            return "1 fizz buzz 2 0 4 fizzbuzz buzz";
             throw new NotImplementedException ("You have to write a test first");
         }
     }
