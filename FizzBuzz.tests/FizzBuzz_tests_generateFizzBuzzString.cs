@@ -11,7 +11,7 @@ namespace FizzBuzz.tests
         {
             _fizzBuzz = new FizzBuzz_generateFizzBuzzString();
         }
-        
+
 
         [Description("When I use array of numbers equal to [1,9,10,2,0,4,15,10],"+ 
                     "I get a fizzbuzz string equal to 1 fizz buzz 2 0 4 fizzbuzz buzz")]
@@ -19,11 +19,12 @@ namespace FizzBuzz.tests
         public void generateFizzBuzzStringTest()
         {
             //Given
+             FizzBuzz_generateFizzBuzzString _fizzBuzz = new FizzBuzz_generateFizzBuzzString();
             int [] arrayOfNumbers = new int [] {1,9,10,2,0,4,15,10};
             //When
             var fizzBuzzString = _fizzBuzz.generateFizzBuzzString(arrayOfNumbers);
             //Then
-            Assert.AreEqual(fizzBuzzString,"1 fizz buzz 2 0 4 fizzbuzz buzz");
+            Assert.AreEqual("1fizzbuzz2fizzbuzz4fizzbuzzbuzz",fizzBuzzString);
         }
 
 
@@ -39,7 +40,7 @@ namespace FizzBuzz.tests
             //When
             var fizzBuzzString = _fizzBuzz.generateFizzBuzzString(arrayOfNumbers);
             //Then
-            Assert.AreEqual(fizzBuzzString,"1");
+            Assert.AreEqual("1",fizzBuzzString);
         }
         [TestMethod]
         public void generateFizzBuzzStringTestForOneNumberEqualToFour()
@@ -64,7 +65,7 @@ namespace FizzBuzz.tests
             //When
             var fizzBuzzString = _fizzBuzz.generateFizzBuzzString(arrayOfNumbers);
             //Then
-            Assert.AreEqual(fizzBuzzString,"fizz");
+            Assert.AreEqual("fizz",fizzBuzzString);
         }
         [TestMethod]
         public void generateFizzBuzzStringTestForOneNumberMultipleOfThreeEqualTo3()
@@ -74,8 +75,45 @@ namespace FizzBuzz.tests
             //When
             var fizzBuzzString = _fizzBuzz.generateFizzBuzzString(arrayOfNumbers);
             //Then
-            Assert.AreEqual(fizzBuzzString,"fizz");
+            Assert.AreEqual("fizz",fizzBuzzString);
         }
 
+
+        [Description("When I use array of numbers that are multiple of 5,"+ 
+                    "I get buzz")]
+        [TestMethod]
+        public void generateFizzBuzzStringTestForOneNumberMultipleOfThreeEqualTo5()
+        {
+            //Given
+            int [] arrayOfNumbers = new int [] {5};
+            //When
+            var fizzBuzzString = _fizzBuzz.generateFizzBuzzString(arrayOfNumbers);
+            //Then
+            Assert.AreEqual("buzz",fizzBuzzString);
+        }
+        [TestMethod]
+        public void generateFizzBuzzStringTestForOneNumberMultipleOfThreeEqualTo10()
+        {
+            //Given
+            int [] arrayOfNumbers = new int [] {10};
+            //When
+            var fizzBuzzString = _fizzBuzz.generateFizzBuzzString(arrayOfNumbers);
+            //Then
+            Assert.AreEqual("buzz",fizzBuzzString);
+        }
+
+
+        [Description("When I use array of numbers that are multiple of 5 and 3 at the same time,"+ 
+                    "I get buzz")]
+        [TestMethod]
+        public void generateFizzBuzzStringTestForOneNumberMultipleOfThreeEqualTo15()
+        {
+            //Given
+            int [] arrayOfNumbers = new int [] {15};
+            //When
+            var fizzBuzzString = _fizzBuzz.generateFizzBuzzString(arrayOfNumbers);
+            //Then
+            Assert.AreEqual("fizzbuzz",fizzBuzzString);
+        }
     }
 }
